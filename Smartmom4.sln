@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smartmom4", "Smartmom4.csproj", "{BCBF8C19-56C9-443E-BBEB-69935BA67A4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCBF8C19-56C9-443E-BBEB-69935BA67A4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBF8C19-56C9-443E-BBEB-69935BA67A4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBF8C19-56C9-443E-BBEB-69935BA67A4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBF8C19-56C9-443E-BBEB-69935BA67A4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82A3C7CF-CAA1-4530-AB2F-2B40A9400D19}
+	EndGlobalSection
+EndGlobal
