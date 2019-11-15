@@ -17,6 +17,14 @@
             <th>Membership Type</th>
         </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null)</td>
+                <td>@customer.MembershipType.Name</td>
+            </tr>
+        }
+    </tbody>
 </table>
 
