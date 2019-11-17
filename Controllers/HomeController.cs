@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Smartmom4.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         public ActionResult Index()

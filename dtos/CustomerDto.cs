@@ -17,6 +17,8 @@ namespace Smartmom4.dtos
 
         public bool IsSubscribedToNewsletter { get; set; }
         public byte MembershipTypeId { get; set; }
+
+        public MembershipTypeDto MembershipType { get; set; }
         //[Mi18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
     }

@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Smartmom4.Models;
 using Smartmom4.ViewModels;
 
+
 namespace Smartmom4.Controllers
 {
     public class CustomersController : Controller
@@ -68,8 +69,8 @@ namespace Smartmom4.Controllers
 
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            
+            return View();
         }
        
         public ActionResult Details(int id)
