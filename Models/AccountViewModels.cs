@@ -5,6 +5,14 @@ namespace Smartmom4.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
+
+        [Required]
+        [Display(Name = "Driving License")]
+        public string DrivingLicense { get; set; }
+        [Required]
+        [Display(Name = "Phone")]
+        public string Phone { get; set; }
+
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -64,6 +72,14 @@ namespace Smartmom4.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Driving License")]
+        public string DrivingLicense { get; set; }
+        [Required]
+        [StringLength(50)]
+        [Display(Name = "Phone")]
+        public string Phone { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

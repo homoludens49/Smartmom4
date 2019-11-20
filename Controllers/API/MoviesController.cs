@@ -37,6 +37,7 @@ namespace Smartmom4.Controllers.API
         }
 
         //POST /api/movie
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPost]
         public IHttpActionResult CreateMovie(MovieDto movieDto)
         {
@@ -54,6 +55,7 @@ namespace Smartmom4.Controllers.API
         }
 
         //PUT /api/movies/1
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPut]
         public IHttpActionResult UpdateMovie(int id, MovieDto movieDto)
         {
@@ -73,6 +75,7 @@ namespace Smartmom4.Controllers.API
         }
 
         //DELETE /api/movies/1
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpDelete]
         public IHttpActionResult DeleteMovie(int id)
         {

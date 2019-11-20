@@ -54,16 +54,16 @@ namespace Smartmom4
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+              appId: "2342505365878850",
+              appSecret: "3d7a1e4491dcfbef74c355cd4ae00889");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
             //    ClientId = "",
             //    ClientSecret = ""
             //});
-            
+
         }
     }
 }

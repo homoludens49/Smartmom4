@@ -24,5 +24,8 @@ namespace Smartmom4.dtos
 
         [Range(1, 20)]
         public byte NumberInStock { get; set; }
+
+        
+        
     }
 }

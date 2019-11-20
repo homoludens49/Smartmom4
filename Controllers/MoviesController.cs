@@ -26,11 +26,13 @@ namespace Smartmom4.Controllers
 
             public ViewResult Index()
             {
-                
-                return View();
+
+                if (User.IsInRole(RoleName.CanManageMovies))
+                    return View("List");
+                return View("ReadOnlyList");
             }
 
-
+            [Authorize(Roles =RoleName.CanManageMovies)]
             public ViewResult New()
             {
                 var genres = _context.Genres.ToList();
@@ -44,7 +46,7 @@ namespace Smartmom4.Controllers
                 return View("MovieForm", viewModel);
             }
 
-
+            [Authorize(Roles =RoleName.CanManageMovies)]   
             public ActionResult Edit(int id)
             {
                 var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
@@ -89,7 +91,7 @@ namespace Smartmom4.Controllers
 
                 return View(viewModel);
             }
-
+            
             [HttpPost]
             [ValidateAntiForgeryToken]  
             public ActionResult Save(Movie movie)
