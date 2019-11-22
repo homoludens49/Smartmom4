@@ -14,7 +14,9 @@ namespace Smartmom4
                        "~/Scripts/bootbox.js",
                        "~/Scripts/respond.js",
                        "~/Scripts/datatables/jquery.datatables.js",
-                       "~/Scripts/datatables/datatables.bootstrap.js"
+                       "~/Scripts/datatables/datatables.bootstrap.js",
+                       "~/scripts/typeahead.bundle.js",
+                       "~/scripts/toastr.js"
                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -31,7 +33,10 @@ namespace Smartmom4
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/content/datatables/css/datatables.bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/toastr.css",
+                      "~/Content/Typeahead.css"
+                      ));
         }
     }
 }
